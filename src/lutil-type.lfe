@@ -1,7 +1,8 @@
 ;;;; data types and type ops
 ;;;;
 (defmodule lutil-type
-  (export all))
+  (export all)
+  (import (from cl (car 1) (cdr 1))))
 
 (defun add-tuples (a b)
   "Given two tuples, add them together."
